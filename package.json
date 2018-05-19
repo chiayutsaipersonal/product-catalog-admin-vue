@@ -4,23 +4,13 @@
   "description": "Vue.js SPA admin client for Product Catalog website project",
   "author": "David Tsai <chiayu.tsai.personal@gmail.com>",
   "private": false,
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
-  ],
+  "browserslist": ["> 1%", "last 2 versions", "not ie <= 8"],
   "gitHooks": {
     "pre-commit": "lint-staged"
   },
   "lint-staged": {
-    "*.js": [
-      "vue-cli-service lint",
-      "git add"
-    ],
-    "*.vue": [
-      "vue-cli-service lint",
-      "git add"
-    ]
+    "*.js": ["vue-cli-service lint", "git add"],
+    "*.vue": ["vue-cli-service lint", "git add"]
   },
   "dependencies": {
     "vue": "^2.5.16",
@@ -39,7 +29,9 @@
   },
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --dest \"../product-catalog-admin-express/public\"",
-    "lint": "vue-cli-service lint"
+    "build":
+      "vue-cli-service build --dest \"../product-catalog-admin-express/public\"",
+    "lint": "vue-cli-service lint",
+    "start": "npm run serve"
   }
 }
